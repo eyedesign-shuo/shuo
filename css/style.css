@@ -1,0 +1,416 @@
+@charset "UTF-8";
+* {
+    outline: none!important;
+}
+
+/*---------------------------------
+  基本設定
+---------------------------------*/
+
+
+html {
+    font-family: Helvetica,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Arial,sans-serif;
+    font-weight: 400;
+}
+
+p, a {
+    font-size: 13px;
+    line-height: 1.8em;
+    color: #808080;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+a, a:hover {
+    transition: 0.4s;
+}
+
+ul, li {
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 1.8em;
+    color: #808080;
+    letter-spacing: 0.1em;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2em;
+    line-height: 1.4em;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+/* スマホ向け改行 */
+.sp {
+    display: none;
+}
+
+
+/*---------------------------------
+  ヘッダー
+---------------------------------*/
+
+header {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+}
+
+header img:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+
+/*---------------------------------
+  本文
+---------------------------------*/
+
+/* 共通設定 */
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+/* Menu 画像 */
+
+.menu-img {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+/* Menu タイトル */
+.menu {
+    width: 100%;
+    padding: 30px;
+    background-color: #ccc5bd;
+    margin-bottom: 50px;
+}
+
+.menu h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #7a6a59;
+}
+
+
+
+/* Menuリストのタイトル */
+
+.menu-title {
+    border-top: 2px solid black;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+
+.menu-title h3 {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #808080;
+}
+
+
+.menu-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0;
+    color: #808080;
+}
+
+
+.menu-title span {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+
+
+/* Menu リストの配置 */
+.wrap-content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    justify-content: space-between;
+}
+
+.menu-list {
+    width: 45%;
+    padding-bottom: 100px;    
+}
+
+.menu-content {
+    padding-bottom: 30px;
+}
+
+
+
+/* Menuリストの料金 */
+
+.menu-price {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.price-left {
+    width: 70%;
+    padding-right: 10px;
+}
+
+.price-right {
+    width: 30%;
+}
+
+
+.menu-comment {
+    text-align: right;
+}
+
+
+.price-comment p {
+    line-height: normal;
+    color: #949494;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 保証期間より下 */
+
+.caution {
+    padding-bottom: 60px;
+}
+
+.caution-title {
+    padding-bottom: 10px;
+}
+
+
+.caution-title h3 {
+    background: none;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    color: #808080;
+    padding: 0 55px;
+}
+
+.caution-title h3:before, .caution-title h3:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 1px;
+    background-color: black;
+}
+  
+.caution-title h3:before {
+    left:0;
+}
+
+.caution-title h3:after {
+    right: 0;
+}
+
+
+
+
+.caution-content span {
+    color: rgb(161, 0, 0);
+}
+
+.caution-subcontent p {
+    color: #949494;
+}
+
+
+/*---------------------------------
+  フッター
+---------------------------------*/
+
+footer {
+    height: 50px;
+
+}
+
+/*
+  トップへ戻るボタン
+---------------------------------*/
+
+.page-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #7a6a59;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.page-top::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: translateX(-50%) rotate(-45deg);
+    transition: 0.2s;
+}
+
+.page-top:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------
+  タブレット向けレイアウト
+------------------------------------------------------------------*/
+
+@media screen and (max-width:1024px ) {
+
+/*---------------------------------
+  ヘッダー
+---------------------------------*/
+
+header {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+
+
+
+/*---------------------------------
+  本文
+---------------------------------*/
+
+/* 共通設定 */
+main {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+/* Menu リストの配置 */
+.wrap-content {
+    display: block;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: normal;
+}
+
+.menu-list {
+    width: 100%;
+}
+
+
+
+
+}
+
+
+
+/*------------------------------------------------------------------
+  タブレット向けレイアウト
+------------------------------------------------------------------*/
+
+@media screen and (max-width:600px ) {
+
+/*---------------------------------
+  共通設定
+---------------------------------*/
+
+h1, h2, h3 {
+    letter-spacing: 0.1em;
+}
+
+/* スマホ向け改行 */
+.sp {
+    display: block;
+}
+
+
+/*---------------------------------
+  ヘッダー
+---------------------------------*/
+
+header {
+    max-width: initial;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+/*---------------------------------
+  本文
+---------------------------------*/
+
+/* 共通設定 */
+main {
+    max-width: initial;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+}
