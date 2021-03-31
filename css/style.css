@@ -172,7 +172,14 @@ main {
 .flex {
     display: flex;
     width: 100%;
-    padding: 8px 0;
+    padding-top: 45px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid;
+    border-style: dotted;
+}
+
+.flex:first-child {
+    padding-top: 8px;
 }
 
 .price-left {
@@ -189,6 +196,11 @@ main {
     text-align: right;
 }
 
+.price-comment {
+    padding-top: 8px;
+    padding-bottom: 0;
+    line-height: 1em;
+}
 
 .price-comment p {
     line-height: normal;
@@ -196,6 +208,9 @@ main {
     font-size: 12px;
 }
 
+/* .price-comment span {
+    text-decoration: underline;
+} */
 
 
 
