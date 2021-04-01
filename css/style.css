@@ -182,23 +182,16 @@ main {
     padding-top: 8px;
 }
 
-.menu-price .price-left {
+
+.price-left {
     width: 70%;
     padding-right: 10px;
 }
 
-.menu-price .price-right {
+.price-right {
     width: 30%;
 }
 
-.menu-price2 .price-left {
-    width: 50%;
-    padding-right: 10px;
-}
-
-.menu-price2 .price-right {
-    width: 50%;
-}
 
 
 .menu-comment {
@@ -438,6 +431,16 @@ main {
 }
 
 
+/* Menuリストの料金 */
+.menu-price2 .price-left {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.menu-price2 .price-right {
+    width: 50%;
+    text-align: center;
+}
 
 
 }
