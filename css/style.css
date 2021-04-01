@@ -165,7 +165,7 @@ main {
 
 /* Menuリストの料金 */
 
-.menu-price {
+.menu-price, .menu-price2 {
     width: 100%;
 }
 
@@ -182,13 +182,22 @@ main {
     padding-top: 8px;
 }
 
-.price-left {
+.menu-price .price-left {
     width: 70%;
     padding-right: 10px;
 }
 
-.price-right {
+.menu-price .price-right {
     width: 30%;
+}
+
+.menu-price2 .price-left {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.menu-price2 .price-right {
+    width: 50%;
 }
 
 
@@ -274,6 +283,9 @@ main {
     color: #949494;
 }
 
+.caution-img {
+    padding-top: 30px;
+}
 
 /*---------------------------------
   フッター
