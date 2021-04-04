@@ -161,9 +161,28 @@ header {
 
 /* 共通設定 */
 main {
-    max-width: 600px;
+    max-width: 768px;
     margin: 0 auto;
 }
+
+
+
+/* 背景画像 */
+.bkg-img {
+    position: static;
+}
+
+
+/* 文字 */
+.COMMING-SOON {
+    position: static;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
 
 }
 
@@ -188,33 +207,17 @@ header {
 }
 
 
-
 /*---------------------------------
   本文
 ---------------------------------*/
 
 /* 共通設定 */
 main {
-    max-width: 350px;
+    max-width: initial;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
-/* 背景画像 */
-.bkg-img {
-    position: static;
-}
-
-
-/* 文字 */
-.COMMING-SOON {
-    position: static;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-}
 
 
 }
