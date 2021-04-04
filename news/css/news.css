@@ -1,0 +1,220 @@
+@charset "UTF-8";
+* {
+    outline: none!important;
+}
+
+
+/*---------------------------------
+  基本設定
+---------------------------------*/
+
+
+html {
+    font-family: Helvetica,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Arial,sans-serif;
+    font-weight: 400;
+}
+
+
+
+p, a {
+    font-size: 13px;
+    line-height: 1.8em;
+    color: #808080;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+a, a:hover {
+    transition: 0.4s;
+}
+
+ul, li {
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 1.8em;
+    color: #808080;
+    letter-spacing: 0.1em;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2em;
+    line-height: 1.4em;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+/*---------------------------------
+  ヘッダー
+---------------------------------*/
+
+header {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+}
+
+header img:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+
+/*---------------------------------
+  本文
+---------------------------------*/
+
+/* 共通設定 */
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+/* 背景画像あり */
+.bkg-img {
+    position: relative;
+}
+
+.bkg-img img {
+    width: 100%;
+    opacity: 0.8;
+    height: auto;
+}
+
+
+/* 文字 */
+
+.COMMING-SOON {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    width: 350px;
+    padding: 20px 0px;
+}
+
+.COMMING-SOON h2 {
+    color:#808080;
+    padding-bottom: 10px;
+}
+
+.COMMING-SOON p {
+    /* color:#333; */
+    padding-bottom: 5px;
+}
+
+.COMMING-SOON a {
+    /* color: #333; */
+    font-weight: bold;
+}
+
+.COMMING-SOON a:hover {
+    text-decoration: underline;
+}
+
+
+/*---------------------------------
+  フッター
+---------------------------------*/
+
+footer {
+    height: 50px;
+
+}
+
+/*------------------------------------------------------------------
+  タブレット向けレイアウト
+------------------------------------------------------------------*/
+
+@media screen and (max-width:1024px ) {
+
+/*---------------------------------
+  ヘッダー
+---------------------------------*/
+
+header {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+
+
+
+/*---------------------------------
+  本文
+---------------------------------*/
+
+/* 共通設定 */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+}
+
+
+
+/*------------------------------------------------------------------
+  タブレット向けレイアウト
+------------------------------------------------------------------*/
+
+@media screen and (max-width:600px ) {
+
+
+
+/*---------------------------------
+  ヘッダー
+---------------------------------*/
+
+header {
+    max-width: initial;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+/*---------------------------------
+  本文
+---------------------------------*/
+
+/* 共通設定 */
+main {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* 背景画像 */
+.bkg-img {
+    position: static;
+}
+
+
+/* 文字 */
+.COMMING-SOON {
+    position: static;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+
+}
