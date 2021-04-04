@@ -165,25 +165,6 @@ main {
     margin: 0 auto;
 }
 
-
-
-/* 背景画像 */
-.bkg-img {
-    position: static;
-}
-
-
-/* 文字 */
-.COMMING-SOON {
-    position: static;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-}
-
-
 }
 
 
@@ -218,6 +199,22 @@ main {
     padding: 0 20px;
 }
 
+
+/* 背景画像 */
+.bkg-img {
+    position: static;
+}
+
+
+/* 文字 */
+.COMMING-SOON {
+    position: static;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
 
 
 }
