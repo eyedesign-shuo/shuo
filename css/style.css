@@ -214,7 +214,9 @@ main {
     text-decoration: underline;
 } */
 
-
+.menu-content span {
+    color: rgb(161, 0, 0);
+}
 
 
 
