@@ -251,7 +251,7 @@ main {
 }
 
 .reserve h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: #7a6a59;
 }
@@ -266,7 +266,7 @@ main {
     padding: 10px 0;
     margin-bottom: 50px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     padding-bottom: 10px;
     color: #808080;
@@ -285,6 +285,7 @@ main {
 
 .reserve-content a {
     font-weight: bold;
+    font-size: 14px;
 }
 
 .reserve-content a:hover {
@@ -294,6 +295,7 @@ main {
 
 .reserve-content p {
     color: #949494;
+    font-size: 14px;
 }
 
 .reserve-content .red {
@@ -332,6 +334,7 @@ main {
     list-style: none;
     padding-left: 1.3em;
     text-indent: -1.3em;
+    font-size: 14px;
 }
 
 
@@ -339,7 +342,7 @@ main {
 /* 保証期間より下 */
 
 .caution {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .caution-title {
